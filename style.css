@@ -615,6 +615,7 @@ body {
 
 /* ------------ home section------------*/
 .home {
+  position: relative;
   overflow: hidden;
   display: flex;
   height: 100vh;
@@ -665,7 +666,6 @@ body {
   font-size: 27px;
   color: #f0e6d2;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
-  /* Soft cream for warm contrast */
 }
 
 .home .home-content .text-2 {
@@ -673,27 +673,29 @@ body {
   letter-spacing: 0.1em;
   font-weight: 900;
   color: #ffd166;
-  /* Golden/yellow for standout headline */
   font-family: 'Raleway', sans-serif;
 }
 
 .home .home-content .text-3 {
   font-size: 30px;
-  color: #ffffff;
-  /* White for clear typing effect */
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 250px;
 }
 
 .text-subheading {
-  display: block;
-  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  /* distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 1.1rem;
   font-weight: 500;
   color: #a8dadc;
-  /* Soft light blue for subtle accent */
-  margin-top: 8px;
-  margin-bottom: 12px;
   letter-spacing: 0.5px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  /* ensures it's above particles */
 }
 
 .home .home-content .text-3 span {
