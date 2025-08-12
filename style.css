@@ -1203,6 +1203,9 @@ body {
     content: "\f00d";
   }
 
+  .gear {
+    display: none;
+  }
 
   .max-width {
     max-width: 100%;
@@ -1274,25 +1277,10 @@ body {
   .home .home-content .text-2,
   .home .home-content .text-3 {
     text-align: left;
-    /* Center the text */
     display: block;
-    /* Ensure the elements behave as block elements */
     margin: 0;
-    /* Remove any margin that could cause shifting */
   }
 
-  .home {
-
-    background: url(./assets/images/car.gif) no-repeat var(--cream);
-    background-position: center calc(50%);
-    background-size: 900px 700px;
-  }
-
-  .light-theme .home {
-    background: url(./assets/images/car.gif) no-repeat var(--cream);
-    background-position: center calc(50%);
-    background-size: 900px 700px;
-  }
 
 
 }
@@ -1304,6 +1292,11 @@ body {
     overflow: hidden;
     padding: 0 23px;
   }
+
+  .navbar .menu {
+    display: none;
+  }
+
 
   .home .home-content .text-1 {
     display: none;
@@ -1317,11 +1310,27 @@ body {
 
   .home .home-content .text-3 {
     font-size: 32px;
+    margin-bottom: auto;
   }
 
   .about .about-content .right .text {
     font-size: 17px;
     height: 42px;
+  }
+
+  .home .gear {
+    display: none;
+  }
+
+  .home .car {
+    margin-top: 10px;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 600px;
+    transform-origin: center;
+    will-change: transform;
   }
 
   .about .about-content .left .mySlides img {
@@ -1415,16 +1424,5 @@ body {
     margin-left: 0px;
   }
 
-  .home {
 
-    background: url(./assets/images/carbgmobile.gif) no-repeat var(--cream);
-    background-position: center calc(40%);
-    background-size: 60px 50px;
-  }
-
-  .light-theme .home {
-    background: url(./assets/images/carbgmobile.gif) no-repeat var(--cream);
-    background-position: center calc(50%);
-    background-size: 600px 500px;
-  }
 }
