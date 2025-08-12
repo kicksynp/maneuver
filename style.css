@@ -685,7 +685,6 @@ body {
 .text-subheading {
   position: absolute;
   bottom: 50px;
-
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.1rem;
@@ -1095,7 +1094,7 @@ body {
 }
 
 .contact .max-width {
-  margin: auto 0 auto 40px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 
@@ -1412,17 +1411,38 @@ body {
     font-size: 25px;
   }
 
+  .text-subheading {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #a8dadc;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+
+  }
+
   .about .about-content .right .text,
   .left .text {
     font-size: 19px;
   }
-}
 
-@media (max-width: 320px) {
-  .max-width {
-    overflow: hidden;
-    margin-left: 0px;
+  .contact-content {
+    display: flex;
+    align-items: center;
+
   }
 
+  @media (max-width: 320px) {
+    .max-width {
+      overflow: hidden;
+      margin-left: 0px;
+    }
 
+
+  }
 }
